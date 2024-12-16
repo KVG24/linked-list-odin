@@ -1,2 +1,3 @@
-# template
-Template for new repo
+# Linked Lists
+
+Linked Lists assignment from The Odin Project
