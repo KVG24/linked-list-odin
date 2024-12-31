@@ -41,7 +41,7 @@ export class LinkedList {
     }
 
     firstNode() {
-        return `First node: ${this.head.value}`;
+        return this.head.value;
     }
 
     tail() {
@@ -51,7 +51,7 @@ export class LinkedList {
                 lastNode = lastNode.nextNode;
             }
         }
-        return `Last node: ${lastNode.value}`;
+        return lastNode.value;
     }
 
     at(index) {
@@ -62,14 +62,14 @@ export class LinkedList {
             let prev;
             curr = this.head;
             if (index == 0) {
-                return `Element at ${index} index is ${this.head.value}`;
+                return this.head.value;
             } else {
                 curr = this.head;
                 for (let i = 0; i < index; i++) {
                     prev = curr;
                     curr = curr.nextNode;
                 }
-                return `Element at ${index} index is ${curr.value}`;
+                return curr.value;
             }
         }
     }
